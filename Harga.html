@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  #Pricing {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    
+
+}
+#Pricing h1 {
+    font-size: 36px;
+    font-weight: 600;
+    
+}
+
+.table-container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.table-row {
+  display: flex;
+  width: 100%;
+}
+
+.table-column {
+  flex: 1 0 33.33%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.table-column p {
+  color: #194376;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #194376;
+  color: white;
+  border-radius: 20px;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+table tr:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+
+
+
+/* Media query untuk layar dengan lebar maksimum 576px */
+@media (max-width: 576px) {
+    .table-row {
+        flex-direction: column; /* Mengubah orientasi flex menjadi vertikal */
+    }
+
+    .table-column {
+       width: 100%; /* Setiap kolom memenuhi lebar kontainer */
+       padding: 10px; /* Padding untuk memperbaiki tampilan */
+       box-sizing: border-box; /* Tetapkan box-sizing untuk mempertahankan padding dalam perhitungan lebar */
+       margin-bottom: 20px; /* Jarak antara baris */
+    }
+
+    table {
+        border-radius: 0; /* Menghapus border-radius */
+        width: 100%; /* Setiap tabel memenuhi lebar kontainer */
+    }
+
+    td {
+        display: block; /* Mengubah sel menjadi blok agar tampil satu per baris */
+        border: none; /* Menghapus border */
+        padding: 8px; /* Ubah padding agar tidak terlalu besar */
+        text-align: center; /* Pusatkan teks dalam sel */
+    }
+
+    table tr {
+        display: block; /* Mengubah baris menjadi blok agar tampil satu per baris */
+        margin-bottom: 10px; /* Jarak antar baris */
+    }
+}
+
+</style>
+<body>
+    <!------HARGA----->
+
+    <section id="Pricing">
+        <h1>HARGA</h1>
+        <p>JFDHVHGRVRH</p>
+               
+                    <div class="table-container">
+                    <div class="table-row">
+                    <div class="table-column">
+                    <h2>Kiloan</h2>
+                    <table>
+                        <tr>
+                          <td> Self Service CKL ,(5 KG)	</td>
+                          <td>30.000</td>
+                        </tr>
+                        <tr>
+                          <td>Cuci Kering Lipat (3 KG)</td>
+                          <td>25.000</td>
+                        </tr>
+                        <tr>
+                          <td>Cuci Kering Lipat (5 KG)	</td>
+                          <td>35.000</td>
+                        </tr>
+                        <tr>
+                          <td>Cuci Kering Setrika (5 KG) 	</td>
+                          <td>50.000</td>
+                        </tr>
+                        <tr>
+                          <td>Cuci Kering Setrika (5 KG) </td>
+                          <td>	45.000</td>
+                        </tr>
+                          </table>
+                        </div>
+            
+                        <div class="table-column">
+                            <h2>Satuan</h2>
+                        <table>
+                        <tr>
+                          <td> Selimut</td>
+                          <td>	25.000</td>
+                        </tr>
+                        <tr>
+                          <td>Bantal/Guling Dewasa	</td>
+                          <td>50.000</td>
+                        </tr>
+                        <tr>
+                          <td>Kemeja Batik	</td>
+                          <td>25.000</td>
+                        </tr>
+                        <tr>
+                          <td>Blouse	</td>
+                          <td>25.000</td>
+                        </tr>
+                        <tr>
+                          <td>Jas	</td>
+                          <td>35.000</td>
+                        </tr>
+                          </table>
+                        </div>
+            
+                        <div class="table-column">
+                            <h2>Karpet</h2>
+                        <table>
+                        <tr>
+                          <td> Karpet Rumah</td>
+                          <td>Meter2	25.000</td>
+                        </tr>
+                        <tr>
+                          <td>Karpet Masjid</td>
+                          <td>Meter2	17.500</td>
+                        </tr>
+                        <tr>
+                          <td>Karpet Kantor Tanam</td>
+                          <td>Meter2	25.000</td>
+                        </tr>
+                        <tr>
+                          <td>Kasur Palembang	</td>
+                          <td>50.000</td>
+                        </tr>
+                        <tr>
+                          <td>Gorden Tebal</td>
+                          <td>Meter2	12.500</td>
+                        </tr>
+                        </table>
+                        </div>
+                        </div>
+                      
+                      <div class="table-column">
+                        <h2>Boneka</h2>
+                      <table>
+                      <tr>
+                        <td>1 Boneka</td>
+                        <td>7.000</td>
+                      </tr>
+                      <tr>
+                        <td>2 Boneka</td>
+                        <td>15.000</td>
+                      </tr>
+                      <tr>
+                        <td>3 Boneka</td>
+                        <td>20.000</td>
+                      </tr>
+                      <tr>
+                        <td>1 Boneka Besar</td>
+                        <td>30.000</td>
+                      </tr>
+                      <tr>
+                        <td>2 Boneka Besar</td>
+                        <td>50.000</td>
+                      </tr>
+                      </table>
+                      </div>
+            
+                      <div class="table-column">
+                      <h2>Tas</h2>
+                      <table>
+                      <tr>
+                        <td>Sofa 1 Dudukan</td>
+                        <td>100.000</td>
+                      </tr>
+                      <tr>
+                        <td>Bantal Sofa</td>
+                        <td>50.000</td>
+                      </tr>
+                      <tr>
+                        <td>Sofa Minimalis</td>
+                        <td>300.000</td>
+                      </tr>
+                      <tr>
+                        <td>Sofa Bed</td>
+                        <td>400.000</td>
+                      </tr>
+                      <tr>
+                        <td>Spring Bed Uk 120 x 200</td>
+                        <td>	250.000</td>
+                      </tr>
+                      </table>
+                      </div>
+            
+                      <div class="table-column">
+                        <h2>Sprei</h2>
+                      <table>
+                      <tr>
+                        <td>Sprei Polos</td>
+                        <td>10.000</td>
+                      </tr>
+                      <tr>
+                        <td>Sprei Motif</td>
+                        <td>13.000</td>
+                      </tr>
+                      <tr>
+                        <td>Sprei Anti Air</td>
+                        <td>20.000</td>
+                      </tr>
+                      <tr>
+                        <td>Sprei Katun</td>
+                        <td>25.000</td>
+                      </tr>
+                      <tr>
+                        <td>Sprei Satin</td>
+                        <td>15.000</td>
+                      </tr>
+                      </table>
+                    </div>
+                  </div>
+                 </div>
+        </section>
+      
+  
+</body>
+</html>
