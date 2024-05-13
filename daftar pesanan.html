@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Pesanan</title>
+    <!-- <link rel="stylesheet" href="fikri.css"> -->
+    
+</head>
+
+<body>
+    
+<section id="Order-List">
+<div class="header">
+<form action="" method="post">
+<div class="form-group">
+<label for="Services">Pilih Layanan Yang Anda Inginkan:</label>
+<select name="Services" id="Services">
+    <option value="#"></option>                    
+    <option value="kiloan laundry">kiloan laundry</option>
+    <option value="satuan laundry1">satuan laundry1</option>
+    <option value="karpet laundry">karpet laundry</option>
+    <option value="boneka">boneka</option>
+    <option value="tas laundry">tas laundry</option>
+    <option value="sprei laundry">sprei laundry</option>
+    <option value="sepatu laundy">sepatu laundy</option>
+    <option value="sofa laundrfy">sofa laundrfy</option>
+</select>
+</form>
+</div>
+</div>
+
+<div class="form-group">
+<label for="Kilo">Jumlah Kilo/Satuan:</label>
+<input type="number"  name="Kilo" id="Kilo" min="1" max="10" step="0.1" placeholder="Masukkan jumlah kilo atau satuan">
+</div>
+
+
+<div class="form-group">
+<label for="check-in">Tanggal Pemesanan:</label>
+<input type="date" name="check-in" id="check-in">
+</div>
+
+<div class="form-group">
+<label for="check-out">Tanggal Penagmbilan:</label>
+<input type="date" name="check-out" id="check-out">
+</div>
+
+<div class="formbook-group">  
+<a href="metode pembayaran.html">Pesan Sekarang</a>
+</div>
+</section>
+</body>
+</html>
+  <style>
+
+  
+  #Order-List {
+    display: absolute;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  
+  .form-group label {
+      display: block; /* Membuat label menjadi elemen blok */
+      text-align: center; /* Pusatkan teks di dalam label */
+      margin-bottom: 20px;
+      font-weight: bold;
+  }
+  
+  .form-group input[type="date"],[type="number"]  {
+      display: block; /* Membuat input menjadi elemen blok */
+      margin: 0 auto; /* Memusatkan input secara horizontal */
+  }
+  
+  
+  select, input[type="date"],[type="number"]  {
+    width: 100%;
+    padding: 10px;
+    border: 10px solid #1a9ba4;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+  
+  .formbook-group {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  #Order-List .formbook-group a {
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:black;
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 80px;
+    transition: background-color 0.3s ease;
+    margin: auto;
+  }
+  
+  #Order-List .formbook-group a:hover {
+    background-color: #194376;
+  }
+  </style>

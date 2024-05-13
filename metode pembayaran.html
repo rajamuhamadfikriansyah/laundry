@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Pembayaran</title>
+</head>
+
+<style>
+    .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.payment-methods {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.payment-method {
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: #194376;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.payment-method:hover {
+  transform: scale(1.05);
+}
+.payment-method img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+ 
+}
+
+.payment-method label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: white;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #194376;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+</style>
+<body>
+
+<div class="container">
+<h1>Metode Pemabyaran Yang Tersedia</h1>
+<ul class="payment-methods">
+    <li class="payment-method" onclick="showPaymentForm('credit_card')">
+      <img src="https://i.pinimg.com/474x/a3/43/bf/a343bfea8f349388b66fa1f16c36b69e.jpg" alt="Credit_Card" width="30%">
+      <label for="credit_card">Kartu Kredit</label>
+    </li>
+
+    <li class="payment-method" onclick="showPaymentForm('cod')">
+      <img src="https://i.pinimg.com/474x/3e/35/15/3e3515428abe4843bb69cf936e404090.jpg" alt="cod" width="30%">
+      <label for="cod">Cod</label>
+    </li>
+
+    <li class="payment-method" onclick="showPaymentForm('bank_transfer')">
+      <img src="https://i.pinimg.com/474x/ed/a9/aa/eda9aabed661a98d62c5df2df6879258.jpg" alt="Bank_Transfer" width="30%">
+      <label for="bank_transfer">Transfer Bank</label>
+    </li>
+</ul>
+  
+<div class="button">
+  <a href="QRIS.html" class="button">Bayar Sekarang</a>
+</div>
+</div>
+
+
+</body>
+</html>

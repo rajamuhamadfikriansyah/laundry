@@ -18,6 +18,7 @@
 #Pricing h1 {
     font-size: 36px;
     font-weight: 600;
+    color: #041334;
     
 }
 
@@ -39,60 +40,43 @@
   box-sizing: border-box;
 }
 .table-column p {
-  color: #194376;
+  color: ;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #194376;
+  background-color: #1a9ba4;
   color: white;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 td {
-  border: 1px solid #ddd;
+  border: 1px solid black;
   padding: 8px;
 }
 table tr:not(:last-child) {
   border-bottom: 1px solid #ddd;
 }
-
-
-
-
-/* Media query untuk layar dengan lebar maksimum 576px */
-@media (max-width: 576px) {
-    .table-row {
-        flex-direction: column; /* Mengubah orientasi flex menjadi vertikal */
-    }
-
-    .table-column {
-       width: 100%; /* Setiap kolom memenuhi lebar kontainer */
-       padding: 10px; /* Padding untuk memperbaiki tampilan */
-       box-sizing: border-box; /* Tetapkan box-sizing untuk mempertahankan padding dalam perhitungan lebar */
-       margin-bottom: 20px; /* Jarak antara baris */
-    }
-
-    table {
-        border-radius: 0; /* Menghapus border-radius */
-        width: 100%; /* Setiap tabel memenuhi lebar kontainer */
-    }
-
-    td {
-        display: block; /* Mengubah sel menjadi blok agar tampil satu per baris */
-        border: none; /* Menghapus border */
-        padding: 8px; /* Ubah padding agar tidak terlalu besar */
-        text-align: center; /* Pusatkan teks dalam sel */
-    }
-
-    table tr {
-        display: block; /* Mengubah baris menjadi blok agar tampil satu per baris */
-        margin-bottom: 10px; /* Jarak antar baris */
-    }
+@media only screen and (max-width: 768px) {
+  .table-column {
+    flex: 1 0 50%; /* Mengubah lebar kolom menjadi 50% saat lebar layar maksimum 768px */
+  }
+  
 }
 
+@media only screen and (max-width: 450px) {
+  .table-column {
+    flex: 1 0 100%; /* Mengubah lebar kolom menjadi 100% saat lebar layar maksimum 450px */
+  }
+  
+  .table-row {
+    flex-direction: column; /* Mengubah arah tata letak menjadi vertikal saat lebar layar 450px */
+  }
+}
 </style>
+
+
 <body>
     <!------HARGA----->
 
