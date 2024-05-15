@@ -168,7 +168,7 @@ body {
 }
 
 /*------FITUR-----*/
- #Fitur {
+#Fitur {
   width: 92%;
   margin: auto;
   text-align: center;
@@ -219,17 +219,15 @@ p {
 
 /*------HARGA-----*/
 
-
 /*CONTACT */
-.Contact h1{
+.Contact h1 {
   text-align: center;
   font-size: 36px;
   font-weight: 600;
-  color:#041334 ;
+  color: #041334;
 }
-.Contact p{
+.Contact p {
   text-align: center;
-  
 }
 .part {
   background-color: #1a9ba4;
@@ -265,13 +263,13 @@ p {
   margin-right: 7px;
 }
 .social_media_icon:hover {
-  background-color:#128389 ;
+  background-color: #128389;
   color: black;
 }
 .Section {
   width: 80%;
 }
-.logo span{
+.logo span {
   color: white;
 }
 
@@ -368,8 +366,6 @@ p {
   }
 }
 
-
-
 #location {
   max-width: 100%;
   margin: 0 auto;
@@ -379,7 +375,6 @@ p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
 /*FOOTER*/
 #location iframe {
   width: 100%;
@@ -387,10 +382,6 @@ p {
   border: none;
   border-radius: 10px;
 }
-
-
-
-
 
 /*MEDIA QUERIES*/
 /*LAPTOP*/
@@ -416,16 +407,26 @@ p {
     width: 30rem;
     height: 100vh;
   }
+  .navbar-nav.active {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: yellow;
+    width: 30rem;
+    height: 100vh;
+  }
   .text-box {
     width: 80%;
   }
-/*SERVICES*/
+  /*SERVICES*/
   .row {
     flex-wrap: wrap; /* Mengatur wrap pada flex container agar elemen bisa turun ke baris baru */
   }
 
   .Services-col {
-    flex-basis: calc(50% - 26px); /* Setiap kolom memakan setengah lebar container, dengan margin di antaranya */
+    flex-basis: calc(
+      50% - 26px
+    ); /* Setiap kolom memakan setengah lebar container, dengan margin di antaranya */
   }
 
   /*FITUR*/
@@ -439,8 +440,6 @@ p {
   }
 }
 
-
-
 /*HANDPONE*/
 @media (max-width: 450px) {
   html {
@@ -451,12 +450,12 @@ p {
     display: inline-block;
   }
   .navbar-nav {
-  position: absolute;
-  top: 100%;
-  right: -100%;
-  background-color: yellow;
-  width: 30rem;
-  height: 100vh;
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: yellow;
+    width: 30rem;
+    height: 100vh;
   }
   .text-box {
     width: 90%;
@@ -473,7 +472,7 @@ p {
 
   /*SERVICES*/
   .Services-col {
-     /* Setiap kolom memakan setengah lebar container, dengan margin di antaranya */
+    /* Setiap kolom memakan setengah lebar container, dengan margin di antaranya */
   }
   .Services-img {
     width: 100%; /* Mengatur lebar gambar menjadi penuh pada layar dengan lebar maksimum 450px */
@@ -481,13 +480,13 @@ p {
     border-radius: 20px; /* Menghapus border-radius pada gambar */
   }
   .Services-col {
-   flex-basis: 100%; /* Setiap kolom memakan satu baris penuh */
-   flex-basis: calc( 50% - 26px);
+    flex-basis: 100%; /* Setiap kolom memakan satu baris penuh */
+    flex-basis: calc(50% - 26px);
   }
 
   /*FITUR*/
   .Fitur-col {
-   /* Setiap kolom memakan setengah lebar container, dengan margin di antaranya */
+    /* Setiap kolom memakan setengah lebar container, dengan margin di antaranya */
   }
   .Fitur-img {
     width: 100%; /* Mengatur lebar gambar menjadi penuh pada layar dengan lebar maksimum 450px */
@@ -496,6 +495,6 @@ p {
   }
   .Fitur-col {
     flex-basis: 100%; /* Setiap kolom memakan satu baris penuh */
-    flex-basis: calc( 50% - 26px ); 
+    flex-basis: calc(50% - 26px);
   }
 }
