@@ -82,6 +82,7 @@ body {
 }
 .text-box h1 {
   font-size: 62px;
+  color: white;
 }
 .text-box p {
   margin: 10px 0 40px;
@@ -407,13 +408,8 @@ p {
     width: 30rem;
     height: 100vh;
   }
-  .navbar-nav.active {
-    position: absolute;
-    top: 100%;
+  .navbar .navbar-nav.active {
     right: 0%;
-    background-color: yellow;
-    width: 30rem;
-    height: 100vh;
   }
   .text-box {
     width: 80%;

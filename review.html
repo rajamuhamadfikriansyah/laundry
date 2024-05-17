@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REVIEW</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+      }
+      #review {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+      }
+      .review-heading {
+        letter-spacing: 1px;
+        margin: 30px 0;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .review-heading h1 {
+        font-size: 20px;
+        font-weight: 500;
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+      }
+      .review-heading span {
+        font-size: 20px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      .review-box-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      .review-box {
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 5px;
+        width: 300px;
+      }
+      .box-top {
+        display: flex;
+        flex-direction: column;
+      }
+      .profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .profile-img img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      .name-user strong {
+        font-size: 16px;
+      }
+      .name-user span {
+        font-size: 14px;
+        color: gray;
+      }
+      .comment {
+        margin-top: 10px;
+        color: gold;
+      }
+      .comment-text {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+      @media (max-width: 768px) {
+        .review-box {
+          width: 45%; /* Adjusted width to fit two per row with some margin */
+        }
+      }
+      @media (max-width: 450px) {
+        .review-box {
+          width: 90%; /* Full width for smaller screens */
+        }
+        .review-heading h1,
+        .review-heading span {
+          font-size: 18px;
+        }
+        .name-user strong {
+          font-size: 14px;
+        }
+        .name-user span {
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="review">
+      <div class="review-heading">
+        <span>comments</span>
+        <h1>REVIEW</h1>
+      </div>
+    </section>
+    <div class="review-box-container">
+      <div class="review-box">
+        <div class="box-top">
+          <div class="profile">
+            <div class="profile-img">
+              <img src="bunga1.jpeg" alt="profile image" />
+            </div>
+            <div class="name-user">
+              <strong>said Razak</strong>
+              <span>@saidrazakkuy</span>
+            </div>
+          </div>
+          <div class="comment">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="comment-text">
+            This is a sample comment. Great product and excellent service!
+          </p>
+        </div>
+      </div>
+      <div class="review-box">
+        <div class="box-top">
+          <div class="profile">
+            <div class="profile-img">
+              <img src="bunga1.jpeg" alt="profile image" />
+            </div>
+            <div class="name-user">
+              <strong>said Razak</strong>
+              <span>@saidrazakkuy</span>
+            </div>
+          </div>
+          <div class="comment">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="comment-text">
+            Another comment goes here. I had a wonderful experience!
+          </p>
+        </div>
+      </div>
+
+      <div class="review-box">
+        <div class="box-top">
+          <div class="profile">
+            <div class="profile-img">
+              <img src="bunga1.jpeg" alt="profile image" />
+            </div>
+            <div class="name-user">
+              <strong>said Razak</strong>
+              <span>@saidrazakkuy</span>
+            </div>
+          </div>
+          <div class="comment">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="comment-text">
+            Another comment goes here. I had a wonderful experience!
+          </p>
+        </div>
+      </div>
+
+      <div class="review-box">
+        <div class="box-top">
+          <div class="profile">
+            <div class="profile-img">
+              <img src="bunga1.jpeg" alt="profile image" />
+            </div>
+            <div class="name-user">
+              <strong>said Razak</strong>
+              <span>@saidrazakkuy</span>
+            </div>
+          </div>
+          <div class="comment">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="comment-text">
+            Another comment goes here. I had a wonderful experience!
+          </p>
+        </div>
+      </div>
+
+      <div class="review-box">
+        <div class="box-top">
+          <div class="profile">
+            <div class="profile-img">
+              <img src="bunga1.jpeg" alt="profile image" />
+            </div>
+            <div class="name-user">
+              <strong>said Razak</strong>
+              <span>@saidrazakkuy</span>
+            </div>
+          </div>
+          <div class="comment">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="comment-text">
+            Another comment goes here. I had a wonderful experience!
+          </p>
+        </div>
+      </div>
+
+      <div class="review-box">
+        <div class="box-top">
+          <div class="profile">
+            <div class="profile-img">
+              <img src="bunga1.jpeg" alt="profile image" />
+            </div>
+            <div class="name-user">
+              <strong>said Razak</strong>
+              <span>@saidrazakkuy</span>
+            </div>
+          </div>
+          <div class="comment">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="comment-text">
+            Another comment goes here. I had a wonderful experience!
+          </p>
+        </div>
+      </div>
+
+      <div class="review-box">
+        <div class="box-top">
+          <div class="profile">
+            <div class="profile-img">
+              <img src="bunga1.jpeg" alt="profile image" />
+            </div>
+            <div class="name-user">
+              <strong>said Razak</strong>
+              <span>@saidrazakkuy</span>
+            </div>
+          </div>
+          <div class="comment">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="comment-text">
+            Another comment goes here. I had a wonderful experience!
+          </p>
+        </div>
+      </div>
+
+      <div class="review-box">
+        <div class="box-top">
+          <div class="profile">
+            <div class="profile-img">
+              <img src="bunga1.jpeg" alt="profile image" />
+            </div>
+            <div class="name-user">
+              <strong>said Razak</strong>
+              <span>@saidrazakkuy</span>
+            </div>
+          </div>
+          <div class="comment">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="comment-text">
+            Another comment goes here. I had a wonderful experience!
+          </p>
+        </div>
+      </div>
+
+      <div class="review-box">
+        <div class="box-top">
+          <div class="profile">
+            <div class="profile-img">
+              <img src="bunga1.jpeg" alt="profile image" />
+            </div>
+            <div class="name-user">
+              <strong>said Razak</strong>
+              <span>@saidrazakkuy</span>
+            </div>
+          </div>
+          <div class="comment">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="comment-text">
+            Another comment goes here. I had a wonderful experience!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
