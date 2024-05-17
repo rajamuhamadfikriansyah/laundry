@@ -23,7 +23,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  background-color: gray;
+  background-color: yellow;
   border-bottom: 1px solid black;
   position: fixed;
   top: 0;
@@ -267,6 +267,8 @@ p {
   background-color: #128389;
   color: black;
 }
+
+
 .Section {
   width: 80%;
 }
@@ -367,6 +369,9 @@ p {
   }
 }
 
+
+
+/*FOOTER*/
 #location {
   max-width: 100%;
   margin: 0 auto;
@@ -375,14 +380,21 @@ p {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-/*FOOTER*/
 #location iframe {
   width: 100%;
   height: 500px;
   border: none;
   border-radius: 10px;
 }
+
+
+
+
+
+
+
+
+
 
 /*MEDIA QUERIES*/
 /*LAPTOP*/
@@ -391,6 +403,9 @@ p {
     font-size: 100%;
   }
 }
+
+
+
 /*TABLET*/
 @media only screen and (max-width: 768px) {
   html {
@@ -404,7 +419,7 @@ p {
     position: absolute;
     top: 100%;
     right: -100%;
-    background-color: yellow;
+    background-color: white;
     width: 30rem;
     height: 100vh;
   }
@@ -434,7 +449,48 @@ p {
       50% - 26px
     ); /* Setiap kolom memakan setengah lebar container, dengan margin di antaranya */
   }
+  .part-Main {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .part {
+    height: auto;
+    border-radius: 20px;
+  }
+  .Section {
+    width: 100%;
+  }
+  .part-Section p {
+    font-size: 0.9rem;
+    line-height: 24px;
+    padding-right: 20px;
+  }
+  .Detail li a {
+    font-size: 0.9rem;
+    line-height: 24px;
+    padding-right: 20px;
+    padding-left: 2px;
+  }
+  .form input {
+    width: 90%;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .form a {
+    padding: 12px 90px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+  .social_media_icon {
+    height: 35px;
+    width: 35px;
+    margin-right: 5px;
+  }
 }
+
+
+
+
 
 /*HANDPONE*/
 @media (max-width: 450px) {
@@ -493,4 +549,42 @@ p {
     flex-basis: 100%; /* Setiap kolom memakan satu baris penuh */
     flex-basis: calc(50% - 26px);
   }
+  .part-Main {
+    padding: 20px;
+  }
+  .Section h3 {
+    font-size: 28px;
+    line-height: 45px;
+  }
+  .part-Section p {
+    font-size: 0.8rem;
+    line-height: 20px;
+    padding-right: 10px;
+  }
+  .Detail li a {
+    font-size: 0.8rem;
+    line-height: 20px;
+    padding-right: 10px;
+    padding-left: 1px;
+  }
+  .form input {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+  .form a {
+    padding: 10px 70px;
+    font-size: 12px;
+    line-height: 30px;
+  }
+  .social_media_icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 3px;
+  }
 }
+
+
+
+
+
