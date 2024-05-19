@@ -23,7 +23,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  background-color: yellow;
+  background-color: #1dc3cf;
   border-bottom: 1px solid black;
   position: fixed;
   top: 0;
@@ -126,7 +126,7 @@ body {
 }
 #Services p {
   color: black;
-  font-size: 13px;
+  font-size:15px;
   line-height: 15px;
   padding: 10px;
 }
@@ -181,7 +181,7 @@ h1 {
   color: #041334;
 }
 p {
-  color: #777;
+  color: black;
   font-size: 15px;
   font-weight: 300;
   line-height: 20px;
@@ -213,8 +213,8 @@ p {
   font-weight: 600;
 }
 .Fitur-img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50px;
 }
 
